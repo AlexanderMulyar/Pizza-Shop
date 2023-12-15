@@ -1,0 +1,17 @@
+.loader{
+	background: $gray-100;
+	z-index: 9999;
+	.spinner-grow{
+		background-color: $orange-500;
+	}
+}
+
+.small-loader {
+	.spinner-border{
+		border-color: $orange-500;
+		border-right-color: transparent;
+		border-width: 0.4rem;
+		width: 5rem;
+		height: 5rem;
+	}
+}

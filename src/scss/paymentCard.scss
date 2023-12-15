@@ -1,0 +1,8 @@
+.payment-card{
+	&__field{
+		max-width: 80px;
+		&_big{
+			max-width: 180px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.user-menu{
+	color: $black;
+	cursor: pointer;
+	padding: 6px 12px;
+	transition: all 0.3s ease;
+	&:hover,
+	&:active,
+	&:focus {
+		background: $gray-100;
+		color: $orange-500;
+	}	
+	&__link {
+		@extend .link;
+		padding: 0.25rem 1rem;
+		&:hover {
+			background: $gray-100;
+		}
+	}
+	&__menu{
+		min-width: 230px;
+	}
+	&__icon{
+		width: 20px;
+	}
+}

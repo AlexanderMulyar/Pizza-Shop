@@ -1,0 +1,11 @@
+.add-to-cart{
+	border: 1px solid $orange-500;
+	&__btn{
+		color: $gray-500;
+		transition: all 0.3s ease;
+		@extend %reset-btn;
+		&:hover{
+			color: $orange-500;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.footer{
+	background-color: $orange-500;
+	margin-top: 200px;
+	position: relative;
+	z-index: 20;
+	&__list{
+		list-style: none;
+	}
+	&__link{
+		color: $white;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		display: inline-block;
+		&:hover{
+			color: $white;
+			transform: translateY(-5px);
+		}
+	}
+	&__copyring{
+		color: $white;
+	}
+}
+.waves{
+	&__wave{
+		background: url('../img/wave.png');
+		background-size: 1000px 80px;
+		top: -79px;
+		height: 80px;
+	}
+}
+#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 6s linear infinite;
+}
+#wave2 {
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 6s linear infinite;
+}
+#wave3 {
+	z-index: 1000;
+	opacity: 0.3;
+	bottom: 15px;
+	animation: animateWave 5s linear infinite;
+}
+#wave4 {
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 5s linear infinite;
+}
+
+@keyframes animateWave {
+	0%{
+		background-position-x: 1000px;
+	}
+	100% {
+		background-position-x: 0px;
+	}
+}
+@keyframes animateWave_02 {
+	0% {
+		background-position-x: 0px;
+	}
+
+	100% {
+		background-position-x: 1000px;
+	}
+}

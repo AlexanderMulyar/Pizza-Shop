@@ -1,0 +1,101 @@
+.address{
+	&__img{
+		background-color: $orange-300;
+		max-height: 400px;
+		img{
+			object-fit: contain;
+		}
+		@media (min-width: 576px) {
+			border-bottom-left-radius: 0.3rem;
+		}
+	}
+	&__text_light{
+		color: $gray-500;
+		font-size: 14px;
+	}
+	&__link{
+		cursor: pointer;
+	}
+	.modal-dialog{
+		@media (min-width: 768px) {
+			max-width: 800px;
+		}
+		@media (max-width: 768px) {
+			max-width: 500px;
+		}
+	}
+	&__btn_light {
+		@extend %reset-btn;
+		font-size: 16px;
+	}
+	.min-h-100 {
+		min-height: 100% !important;
+	}
+}
+.switch-address {
+	background: $gray-400;
+	border-radius: 30px;
+	overflow: hidden;
+	width: 240px;
+	text-align: center;
+	color: $white;
+	position: relative;
+	padding-right: 120px;
+	position: relative;
+
+	&:before {
+		content: "Самовивіз";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+		pointer-events: none;
+	}
+
+	&__checkbox {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 2;
+
+		&:checked+.switch-address__label:before {
+			transform: translateX(120px);
+			transition: transform 300ms linear;
+		}
+
+		&+.switch-address__label {
+			position: relative;
+			padding: 5px 0;
+			display: block;
+			user-select: none;
+			pointer-events: none;
+
+			&:before {
+				content: "";
+				background: $orange-500;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border-radius: 30px;
+				transform: translateX(0);
+				transition: transform 300ms;
+			}
+
+			.switch-address__label_span {
+				position: relative;
+			}
+		}
+	}
+}

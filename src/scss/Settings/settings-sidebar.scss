@@ -1,0 +1,16 @@
+.settings-sidebar{
+	background: $white;
+	z-index: 5;
+	@media (min-width: 768px) {
+		top: 100px;
+		position: sticky;
+		height: 250px;
+		margin: 0 0.75rem;
+	}
+	@media (max-width: 575px) {
+		margin-top: 60px;
+	}
+	.active{
+		color: $orange-500;
+	}
+}

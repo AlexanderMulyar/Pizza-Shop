@@ -1,0 +1,17 @@
+.custom-radio{
+	&__btn-radio {
+		transition: all 0.15s ease;
+		background: transparent;
+		color: $gray-600;
+		border: 2px solid $gray-600;
+		cursor: pointer;
+		&:focus {
+			color: $gray-600;
+		}
+	}
+	input:checked+label {
+		color: $orange-500;
+		background-color: transparent;
+		border-color: $orange-500;
+	}
+}

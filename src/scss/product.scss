@@ -1,0 +1,87 @@
+.product{
+	margin-top: 100px;
+	&__mark {
+		color: $gray-600;
+		font-size: 12px;
+		position: relative;
+	
+		&:before {
+			content: "";
+			background-color: $gray-500;
+			border-radius: 50%;
+			display: block;
+			height: 3px;
+			width: 3px;
+			position: absolute;
+			top: 50%;
+			left: -7px;
+		}
+	}
+	&__line {
+		width: 20px !important;
+	}
+	&__weigth {
+		color: $gray-600;
+	}
+	&__price {
+		color: $orange-500;
+		&_through{
+			color: $gray-500;
+		}
+	}
+	&__link {
+		color: $black;
+		text-decoration: none;
+	
+		&:hover {
+			color: $black;
+		}
+	}
+	&__delivery{
+		color: $gray-600;
+	}
+	&__add-product{
+		max-width: 90px;
+	}
+	&__img{
+		min-width: 300px;
+		min-height: 300px;
+		img{
+			object-fit: cover;
+		}
+	}
+	&__cart{
+		max-width: 150px;
+		&:hover {
+			color: $orange-500;
+		}
+	}
+}
+.ratting-product{
+	&__input {
+		display: none;
+	}	
+	&__label {
+		cursor: pointer;
+		padding: 0 0.1em;
+		font-size: 2rem;
+	}	
+	&__icon_star {
+		color: $yellow;
+	}	
+	&__icon_none {
+		color: $gray-300;
+	}	
+	&__input:checked~&__label &__icon_star {
+		color: $gray-400;
+	}	
+	&:hover &__label &__icon_star{
+		color: $yellow;
+	}
+	&__input:hover~&__label &__icon_star{
+		color: $gray-400;
+	}
+	&:hover &__input_none:not(:hover)+&__label .rating__icon_none {
+		color: $gray-300;
+	}
+}

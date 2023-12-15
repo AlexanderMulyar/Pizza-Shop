@@ -1,0 +1,22 @@
+.checkout{
+	margin-top: 120px;
+	@media (max-width: 575px) {
+		margin-top: 200px;
+	}
+	&__field{
+		max-width: 200px;
+	}
+	&__content{
+		@media (min-width: 991px) {
+			width: 70%;
+		}
+	}
+	&__sidebar{
+		z-index: 5;
+		@media (min-width: 991px) {
+			width: 25%;
+			top: 100px;
+			position: sticky;
+		}
+	}
+}

@@ -1,0 +1,169 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "./Header/header.scss";
+@import "./Header/userDropDown.scss";
+@import "./Header/headerCart.scss";
+@import "./Header/contactsBlock.scss";
+@import "./Header/searchHeader.scss";
+
+@import "./Home/home.scss";
+@import "./Home/homeBanner.scss";
+@import "./Home/productsList.scss";
+@import "./Home/cetegory.scss";
+
+@import "./Settings/settings-sidebar.scss";
+@import "./Settings/settigns.scss";
+@import "./Settings/orders.scss";
+
+@import "./paymentCard.scss";
+@import "./address.scss";
+@import "./cartPage.scss";
+@import "./checkout.scss";
+@import "./footer.scss";
+@import "./productItem.scss";
+@import "./customRadioBtn.scss";
+@import "./loader.scss";
+@import "./addtoCartBtn.scss";
+@import "./product.scss";
+@import "./allStafs.scss";
+@import "./ScrollToTop.scss";
+@import "./not-found.scss";
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+::-webkit-scrollbar-track {
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.2);
+}
+%reset-btn{
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	background: none;
+}
+textarea{
+	resize: none;
+}
+body{
+	transition: background-color 0.3s ease;
+	color: $black;
+	background-color: $gray-100;
+	overflow-x: hidden;
+}
+.form-control:focus, .accordion-button:focus, .form-select:focus{
+	box-shadow: 0 0 0 0.25rem rgba($orange-500, 0.25);
+	border-color: $orange-500;
+}
+.accordion-button{
+	&:not(.collapsed), &:focus{
+		color: $gray-600;
+		background-color: rgba($orange-500, 0.25);
+	}
+}
+.form-floating{
+	&>.form-control{
+		height: auto;
+	}
+}
+.form-check-input{
+	cursor: pointer;
+}
+.main{
+	flex: 1 1 auto;
+}
+.line {
+	width: 30px;
+	opacity: 1;
+	height: 2px !important;
+	color: $red-400;
+	margin: 5px 0;
+}
+.link {
+	color: $black;
+	text-decoration: none;
+	transition: all 0.15s ease;
+	cursor: pointer;
+
+	&:hover {
+		color: $orange-500;
+	}
+}
+.remove-btn {
+	@extend %reset-btn;
+	transition: all 0.3s ease;
+	color: $gray-500;
+
+	&:hover {
+		color: $orange-500;
+	}
+}
+
+.btn_orange {
+	transition: all 0.15s ease;
+	background: $orange-500;
+	color: $white;
+	border: 2px solid $orange-500;
+	cursor: pointer;
+	text-decoration: none;
+	&:hover,
+	&:active {
+		color: $black;
+		background-color: transparent;
+		border-color: $orange-500;
+		box-shadow: none;
+	}
+	&:disabled{
+		background: $orange-500;
+		border-color: $orange-500;
+	}
+	&:focus{
+		color: $white;
+		background-color: $orange-500;
+		border-color: $orange-500;
+		box-shadow: none;
+	}
+}
+.btn_light {
+	transition: all 0.15s ease;
+	background: $gray-400;
+	color: $white;
+	border: 2px solid $gray-400;
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		color: $black;
+		background-color: transparent;
+		border-color: $gray-400;
+		box-shadow: none;
+	}
+
+	&:disabled {
+		background: $gray-400;
+		border-color: $gray-400;
+	}
+
+	&:focus {
+		color: $white;
+		background-color: $gray-400;
+		border-color: $gray-400;
+		box-shadow: none;
+	}
+}
+.btn-disabled_orange{
+	opacity: 0.65;
+	pointer-events: none;
+}
+
+.form-check-input:checked{
+	background-color: $orange-500;
+	border-color: $orange-500;
+}

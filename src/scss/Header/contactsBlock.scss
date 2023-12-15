@@ -1,0 +1,16 @@
+.contacts-block{
+	&__link{
+		color: $black;
+		text-decoration: none;
+		transition: all 0.3s ease;	
+		&:hover {
+			color: $orange-500;
+		}
+		&_light{
+			color: $orange-500;
+		}
+	}
+	&__socials{
+		background-color: $gray-200;
+	}
+}

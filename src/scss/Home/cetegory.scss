@@ -1,0 +1,42 @@
+.cetegory{
+	margin-top: 100px;
+	@media (max-width: 575px) {
+		margin-top: 200px;
+		&__product {
+			min-width: 300px;
+		}
+	}
+	&__range {
+		&::-webkit-slider-thumb {
+			background-color: $orange-500;
+	
+			&:active {
+				background-color: $orange-500;
+				box-shadow: none;
+			}
+		}
+	
+		&:disabled {
+			&::-webkit-slider-thumb {
+				opacity: 0.8;
+			}
+		}
+	}
+	&_link {
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $orange-500;
+		}
+	}
+	&_label {
+		cursor: pointer;
+	}
+	&__sidebar {
+		z-index: 5;
+		@media (min-width: 991px) {
+			top: 100px;
+			position: sticky !important;
+		}
+	}
+}

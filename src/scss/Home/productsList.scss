@@ -1,0 +1,45 @@
+.slick-arrow {
+	position: relative;
+	z-index: 2;
+	transition: all 0.3s ease 0s;
+
+	&.slick-prev,
+	&.slick-next {
+		position: absolute;
+		top: 50% !important;
+		width: 30px;
+		height: 30px;
+		color: $gray-500;
+		background-color: rgba($white, 0.5);
+		&:hover{
+			color: $orange-500;
+		}
+	}
+	&.slick-disabled {
+		opacity: 0;
+	}
+	&.slick-next{
+		@media (max-width: 768px) {
+			right: 0px;
+		}
+	}
+	&.slick-prev {
+		@media (max-width: 768px) {
+			left: 0px;
+		}
+	}
+}
+.slick-list{
+	padding: 15px 0 30px;
+}
+.slick-track{
+	display: flex;
+	gap: 10px;
+}
+.slick-slide {
+	height: auto;
+	flex: 0 1 20%;
+	> div{
+		height: 100%;
+	}
+}

@@ -1,0 +1,10 @@
+.not-found{
+	&__link{
+		text-decoration: none;
+		color: $gray-500;
+		transition: all 0.3s ease;
+		&:hover{
+			color: $orange-500;
+		}
+	}
+}

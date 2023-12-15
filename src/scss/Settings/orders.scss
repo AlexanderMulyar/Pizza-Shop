@@ -1,0 +1,15 @@
+.orders-item{
+	&__img{
+		max-width: 100px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__name{
+		max-width: 250px;
+	}
+	&:not(:last-child) {
+		border-bottom: 1px solid $gray-500;
+	}
+}

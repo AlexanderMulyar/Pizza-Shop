@@ -1,0 +1,35 @@
+.all-stafs{
+	&__icon{
+		width: 20px;
+	}
+	&__link{
+		text-decoration: none;
+		color: $black;
+		transition: all 0.3s ease;
+		font-size: 18px;
+		background: transparent;
+		border: transparent;
+		padding: 0;
+		&:hover, &:focus {
+			background: transparent;
+			color: $black;
+		}
+	}
+	&__item{
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:hover{
+			background: $orange-500;
+			color: $white;
+			.all-stafs__link {
+				color: $white;
+			}
+		}
+	}
+}
+
+.all-stafs-bottom{
+	.dropdown-menu {
+		top: -90px; // for bottom all stafs
+	}
+}
